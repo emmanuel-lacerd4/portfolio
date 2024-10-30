@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Estilos gerais */
+body {
+    background: #02023a;
+    font-size: 16px; /* Tamanho base da fonte */
+    margin: 0; /* Remove margem do body */
+  }
+  
+  .container {
+    padding: 20px; /* Padding para elementos dentro do container */
+  }
+  
+  /* Navbar responsivo */
+  .navbar-collapse {
+    flex-wrap: wrap; /* Quebra linhas no menu em telas menores */
+  }
+  
+  .nav-item {
+    margin-bottom: 10px; /* Espaçamento entre itens do menu */
+  }
+  
+  /* Seção principal responsiva */
+  .text-left {
+    display: flex; /* Layout flexbox para texto e imagem */
+    flex-direction: column-reverse; /* Coloca imagem à direita em telas menores */
+  }
+  
+  .text-left h1 {
+    flex: 1; /* Ocupa espaço disponível */
+  }
+  
+  .img-fluid {
+    max-width: 100%; /* Imagem se ajusta proporcionalmente */
+    width: auto; /* Mantém proporção da imagem */
+  }
+  
+  /* Seção de cards responsiva */
+  .card-deck {
+    display: flex; /* Layout flexbox para cards */
+    flex-wrap: wrap; /* Quebra linhas em telas menores */
+    justify-content: center; /* Centraliza cards horizontalmente */
+  }
+  
+  /* Footer responsivo */
+  .footer .row {
+    flex-direction: column; /* Colunas no footer em telas menores */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+  }
+  
+  /* Media Queries para telas menores */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Aumenta tamanho de títulos em telas menores */
+    }
+    .text-left h3 {
+      font-size: 1.2rem; /* Aumenta tamanho de subtítulos em telas menores */
+    }
+  }
